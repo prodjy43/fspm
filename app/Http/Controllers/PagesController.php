@@ -76,4 +76,8 @@ class PagesController extends Controller
     public function experts(){
         return view('pages.experts');
     }
+
+    public function agenda(){
+        return view('pages.agenda');
+    }
 }

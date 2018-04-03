@@ -28,5 +28,6 @@ Route::get('/post', 'PagesController@post')->name('News');
 Route::get('/journaux', 'PagesController@journaux')->name('Jounaux');
 Route::get('/revue', 'PagesController@revue')->name('Revue');
 Route::get('/experts', 'PagesController@experts')->name('Experts examens');
+Route::get('agenda', 'PagesController@agenda')->name('Agenda');
 
 Auth::routes();

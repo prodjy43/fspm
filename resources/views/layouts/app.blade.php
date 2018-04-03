@@ -59,11 +59,11 @@
         <a href="/polymecanicien" class="slide-lien">Polymécaniciens</a>
     </div>
     <div class="menu-slide" id="agenda">
-        <a href="#" class="slide-lien">Comités</a>
-        <a href="#" class="slide-lien">AGs</a>
-        <a href="#" class="slide-lien">Evènements</a>
-        <a href="#" class="slide-lien">Foires</a>
-        <a href="#" class="slide-lien">AGOD</a>
+        <a href="/agenda" class="slide-lien">Comités</a>
+        <a href="/agenda" class="slide-lien">AGs</a>
+        <a href="/agenda" class="slide-lien">Evènements</a>
+        <a href="/agenda" class="slide-lien">Foires</a>
+        <a href="/agenda" class="slide-lien">AGOD</a>
     </div>
     <div class="menu-slide" id="emploi">
         <a href="/offre-d-emplois" class="slide-lien">Offres d'emplois</a>

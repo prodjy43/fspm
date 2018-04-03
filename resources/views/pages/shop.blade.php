@@ -101,7 +101,7 @@
                 </p>
             </div>
         </div>
-</div>
+    </div>
 </div>
 @stop()
 @section('footer')
