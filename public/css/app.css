@@ -98,6 +98,7 @@ nav ul li a:hover {
 }
 
 .banner h1 {
+    font-family: 'Pirulen';
     text-align: center;
     text-transform: uppercase;
     color: #f5f5f5;
@@ -110,7 +111,7 @@ nav ul li a:hover {
     text-transform: uppercase;
     color: #f5f5f5;
     font-size: 2em;
-    font-weight: lighter;
+    font-weight: bolder;
 }
 
 .banner p {

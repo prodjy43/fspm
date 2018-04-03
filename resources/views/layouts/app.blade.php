@@ -25,7 +25,7 @@
             <li><a href="#!" onclick="slideMenu('#metiers')">Les métiers</a></li>
             <li><a href="#!" onclick="slideMenu('#agenda')">Agenda</a></li>
             <li><a href="/shop">Shop</a></li>
-            <li><a href="http://qcm.fspm.ch/">QCM</a></li>
+            <li><a href="http://qcm.fspm.ch/" target="_blank">QCM</a></li>
             <li><a href="#!" onclick="slideMenu('#emploi')">Emploi</a></li>
             <li><a href="#!" onclick="slideMenu('#contact')">Contact</a></li>
             
@@ -70,13 +70,9 @@
         <a href="/apprentissage" class="slide-lien">Place d'apprentissages</a>
     </div>
     <div class="menu-slide" id="contact">
-        <a href="#" class="slide-lien">Comité central</a>
-        <a href="#" class="slide-lien">Comité VS</a>
-        <a href="#" class="slide-lien">Comité FR</a>
-        <a href="#" class="slide-lien">Comité NE</a>
-        <a href="#" class="slide-lien">Comité JU/BE</a>
-        <a href="#" class="slide-lien">Comité VD/GE</a>
         <a href="/publicite" class="slide-lien">Publicité</a>
+        <a href="#!" class="slide-lien">Nous contacter</a>
+        <a href="#!" class="slide-lien">Réseaux sociaux</a>
     </div>
     @yield('content')
     <!-- Scripts -->

@@ -8,7 +8,7 @@
         <div class="opacity">
             <h1>Fédération Suisse <br> des Professionnels de la Mécanique</h1>
             <span class="cut-banner"></span>
-            <h2>Slogan ...</h2>
+            <h2>Fédération incontournable dans le domaine industriel pour les relations professionnelles</h2>
             <div class="div-btn">
                 <a href="/register" class="btn btn-incription">Devenir membre</a>
                 <a href="/login" class="btn btn-connexion">Accés membre</a>
