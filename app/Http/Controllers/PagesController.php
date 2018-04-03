@@ -80,4 +80,8 @@ class PagesController extends Controller
     public function agenda(){
         return view('pages.agenda');
     }
+
+    public function publicite(){
+        return view('pages.publicite');
+    }
 }

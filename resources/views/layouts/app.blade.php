@@ -76,7 +76,7 @@
         <a href="#" class="slide-lien">Comité NE</a>
         <a href="#" class="slide-lien">Comité JU/BE</a>
         <a href="#" class="slide-lien">Comité VD/GE</a>
-        <a href="#" class="slide-lien">Publicité</a>
+        <a href="/publicite" class="slide-lien">Publicité</a>
     </div>
     @yield('content')
     <!-- Scripts -->
