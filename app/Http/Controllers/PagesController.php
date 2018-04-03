@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\News;
 
 class PagesController extends Controller
@@ -52,5 +53,24 @@ class PagesController extends Controller
 
     public function shop(){
         return view('pages.shop');
+    }
+    
+    public function post(){
+        $news = News::orderBy('created_at','desc')->get();
+        return view('pages.post', [
+            'news' => $news
+        ]);
+    }
+
+    public function journaux(){
+        return view('pages.journaux');
+    }
+
+    public function revue(){
+        return view('pages.revue');
+    }
+
+    public function experts(){
+        return view('pages.experts');
     }
 }

@@ -28,13 +28,21 @@
             <li><a href="http://qcm.fspm.ch/">QCM</a></li>
             <li><a href="#!" onclick="slideMenu('#emploi')">Emploi</a></li>
             <li><a href="#!" onclick="slideMenu('#contact')">Contact</a></li>
-            <li><a href="/login">Membres</a></li>
+            
+            @if (Auth::user())
+                <li><a href="/account/{{Auth::user()->name}}">{{Auth::user()->name}}</a></li>
+                <li><a href="{{Auth::logout()}}">Déconnexion</a></li>
+            @else
+                <li><a href="/login">Membres</a></li>
+            @endif
+            
+            
         </ul>
     </nav>
     <div class="menu-slide" id="medias">
-        <a href="#" class="slide-lien">News</a>
-        <a href="#" class="slide-lien">Journaux techniques</a>
-        <a href="#" class="slide-lien">Revue de presse</a>
+        <a href="/post" class="slide-lien">News</a>
+        <a href="/journaux" class="slide-lien">Journaux techniques</a>
+        <a href="/revue" class="slide-lien">Revue de presse</a>
     </div>
     <div class="menu-slide" id="fspm">
         <a href="/presentation" class="slide-lien">Présentation</a>
@@ -43,7 +51,7 @@
         <a href="/status" class="slide-lien">Status</a>
         <a href="/register" class="slide-lien">Devenir membre</a>
         <a href="/partenaire" class="slide-lien">Partenaires</a>
-        <a href="#" class="slide-lien">Experts examens</a>
+        <a href="/experts" class="slide-lien">Experts examens</a>
     </div>
     <div class="menu-slide" id="metiers">
         <a href="/maitrise" class="slide-lien">Maîtrisés</a>

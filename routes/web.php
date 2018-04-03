@@ -24,5 +24,9 @@ Route::get('/polymecanicien', 'PagesController@polymecanicien')->name('Polymecan
 Route::get('/offre-d-emplois', 'PagesController@offreEmplois')->name('Offre emplois');
 Route::get('/apprentissage', 'PagesController@apprentissage')->name('Apprentissages');
 Route::get('/shop', 'PagesController@shop')->name('Shop');
+Route::get('/post', 'PagesController@post')->name('News');
+Route::get('/journaux', 'PagesController@journaux')->name('Jounaux');
+Route::get('/revue', 'PagesController@revue')->name('Revue');
+Route::get('/experts', 'PagesController@experts')->name('Experts examens');
 
 Auth::routes();
