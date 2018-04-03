@@ -18,5 +18,11 @@ Route::get('/section','SectionController@index')->name('Section');
 Route::get('/section/{id}','SectionController@section')->name('Sous-Section');
 Route::get('/status', 'PagesController@statuts')->name('Statuts');
 Route::get('/partenaire', 'PagesController@partenaire')->name('Partenaire');
+Route::get('/maitrise',  'PagesController@maitrise')->name('Maitrise');
+Route::get('/afcmt', 'PagesController@afcmt')->name('AFCMT');
+Route::get('/polymecanicien', 'PagesController@polymecanicien')->name('Polymecanicien');
+Route::get('/offre-d-emplois', 'PagesController@offreEmplois')->name('Offre emplois');
+Route::get('/apprentissage', 'PagesController@apprentissage')->name('Apprentissages');
+Route::get('/shop', 'PagesController@shop')->name('Shop');
 
 Auth::routes();

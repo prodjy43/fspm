@@ -18,26 +18,24 @@
     <div class="allnews">
         @foreach ($news as $n)
             <div class="news">
-                @if ($n->image != 'null')
-                    <div class="news-banner" style="background-image:url({{ asset('images/news/'.$n->image)}});">
-                        <span class="news-auteur">{{ $n->user->name }}</span>
-                        <span class="news-date">
-                            <span class="date-mois">
-                                {{ $n->created_at->format('M')}}.
-                            </span>
-                            <span class="date-jour">
-                                {{ $n->created_at->format('d')}}
-                            </span>
+                <div class="news-banner" style="background-image:url({{ asset('images/news/'.$n->image)}});">
+                    <span class="news-auteur">{{ $n->user->name }}</span>
+                    <span class="news-date">
+                        <span class="date-mois">
+                            {{ $n->created_at->format('M')}}.
                         </span>
-                        <span class="news-heure">
-                            Posté à {{ $n->created_at->format('h:m:s') }}
+                        <span class="date-jour">
+                            {{ $n->created_at->format('d')}}
                         </span>
-                    </div>
-                @endif
+                    </span>
+                    <span class="news-heure">
+                        Posté à {{ $n->created_at->format('h:m:s') }}
+                    </span>
+                </div>
                 <div class="news-content">
                     <h2>{{ $n->title }}</h2>
                     <p>
-                    {{ $n->content }}
+                    {!! $n->content !!}
                     </p>
                     <div class="tags">
                         @foreach ($n->tags as $tag)

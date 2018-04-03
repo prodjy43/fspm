@@ -29,4 +29,28 @@ class PagesController extends Controller
     public function partenaire(){
         return view('pages.partenaire');
     }
+
+    public function maitrise(){
+        return view('pages.maitrise');
+    }
+
+    public function afcmt(){
+        return view('pages.afcmt');
+    }
+
+    public function polymecanicien(){
+        return view('pages.polymecanicien');
+    }
+
+    public function offreEmplois(){
+        return view('pages.offreEmploi');
+    }
+
+    public function apprentissage(){
+        return view('pages.apprentissage');
+    }
+
+    public function shop(){
+        return view('pages.shop');
+    }
 }

@@ -24,7 +24,7 @@
             <li><a href="#!" onclick="slideMenu('#fspm')">FSPM</a></li>
             <li><a href="#!" onclick="slideMenu('#metiers')">Les métiers</a></li>
             <li><a href="#!" onclick="slideMenu('#agenda')">Agenda</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="/shop">Shop</a></li>
             <li><a href="http://qcm.fspm.ch/">QCM</a></li>
             <li><a href="#!" onclick="slideMenu('#emploi')">Emploi</a></li>
             <li><a href="#!" onclick="slideMenu('#contact')">Contact</a></li>
@@ -46,9 +46,9 @@
         <a href="#" class="slide-lien">Experts examens</a>
     </div>
     <div class="menu-slide" id="metiers">
-        <a href="#" class="slide-lien">Maîtrisés</a>
-        <a href="#" class="slide-lien">AFCMT</a>
-        <a href="#" class="slide-lien">Polymécaniciens</a>
+        <a href="/maitrise" class="slide-lien">Maîtrisés</a>
+        <a href="/afcmt" class="slide-lien">AFCMT</a>
+        <a href="/polymecanicien" class="slide-lien">Polymécaniciens</a>
     </div>
     <div class="menu-slide" id="agenda">
         <a href="#" class="slide-lien">Comités</a>
@@ -58,8 +58,8 @@
         <a href="#" class="slide-lien">AGOD</a>
     </div>
     <div class="menu-slide" id="emploi">
-        <a href="#" class="slide-lien">Offres d'emploi</a>
-        <a href="#" class="slide-lien">Place d'apprentissage</a>
+        <a href="/offre-d-emplois" class="slide-lien">Offres d'emplois</a>
+        <a href="/apprentissage" class="slide-lien">Place d'apprentissages</a>
     </div>
     <div class="menu-slide" id="contact">
         <a href="#" class="slide-lien">Comité central</a>
