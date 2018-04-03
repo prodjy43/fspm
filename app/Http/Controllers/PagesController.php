@@ -4,14 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 use App\News;
 
 class PagesController extends Controller
 {
     public function index(){
         $news = News::orderBy('created_at','desc')->get()->take(3);
+        $files = File::allFiles('images/banners');
         return view('pages.index', [
-            'news' => $news
+            'news' => $news,
+            'files' => $files
         ]);
     }
 

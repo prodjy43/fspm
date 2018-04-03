@@ -117,7 +117,27 @@ nav ul li a:hover {
     padding-top: 20px;
     text-align: center;
 }
-
+.banners{
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.one-banner{
+    height: 100%;
+    width:100%;
+    display: inline-block;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .cut-banner {
     display: block;
     width: 60%;
