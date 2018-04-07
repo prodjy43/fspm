@@ -84,4 +84,12 @@ class PagesController extends Controller
     public function publicite(){
         return view('pages.publicite');
     }
+
+    public function contact(){
+        return view('pages.contact');
+    }
+
+    public function social(){
+        return view('pages.social');
+    }
 }

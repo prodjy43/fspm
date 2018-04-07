@@ -28,7 +28,8 @@ Route::get('/post', 'PagesController@post')->name('News');
 Route::get('/journaux', 'PagesController@journaux')->name('Jounaux');
 Route::get('/revue', 'PagesController@revue')->name('Revue');
 Route::get('/experts', 'PagesController@experts')->name('Experts examens');
-Route::get('agenda', 'PagesController@agenda')->name('Agenda');
-Route::get('publicite', 'PagesController@publicite')->name('Publicite');
-
+Route::get('/agenda', 'PagesController@agenda')->name('Agenda');
+Route::get('/publicite', 'PagesController@publicite')->name('Publicite');
+Route::get('/contact', 'PagesController@contact')->name('Contact');
+Route::get('/social', 'PagesController@social')->name('Social');
 Auth::routes();

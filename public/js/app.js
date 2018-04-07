@@ -21,7 +21,50 @@ function popup(id){
 
 $(document).ready(function() { //start after HTML, images have loaded
  
-    var InfiniteRotator =
+    var InfiniteRotatorG =
+    {
+        init: function()
+        {
+            //initial fade-in time (in milliseconds)
+            var initialFadeIn = 1000;
+ 
+            //interval between items (in milliseconds)
+            var itemInterval = 5000;
+ 
+            //cross-fade time (in milliseconds)
+            var fadeTime = 1000;
+ 
+            //count number of items
+            var numberOfItems = $('.one-bannerG').length;
+ 
+            //set current item
+            var currentItem = Math.floor((Math.random() * $('.one-bannerG').length) + 1);;
+ 
+            //show first item
+            $('.one-bannerG').eq(currentItem).fadeIn(initialFadeIn);
+ 
+            //loop through the items
+            var infiniteLoop = setInterval(function(){
+                $('.one-bannerG').eq(currentItem).fadeOut(fadeTime);
+ 
+                if(currentItem == numberOfItems -1){
+                    currentItem = 0;
+                }else{
+                    currentItem++;
+                }
+                $('.one-bannerG').eq(currentItem).fadeIn(fadeTime);
+ 
+            }, itemInterval);
+        }
+    };
+ 
+    InfiniteRotatorG.init();
+ 
+});
+
+$(document).ready(function() { //start after HTML, images have loaded
+ 
+    var InfiniteRotatorP =
     {
         init: function()
         {
@@ -35,29 +78,29 @@ $(document).ready(function() { //start after HTML, images have loaded
             var fadeTime = 1000;
  
             //count number of items
-            var numberOfItems = $('.one-banner').length;
+            var numberOfItems = $('.one-bannerP').length;
  
             //set current item
-            var currentItem = 0;
+            var currentItem = Math.floor((Math.random() * $('.one-bannerP').length));;
  
             //show first item
-            $('.one-banner').eq(currentItem).fadeIn(initialFadeIn);
+            $('.one-bannerP').eq(currentItem).fadeIn(initialFadeIn);
  
             //loop through the items
             var infiniteLoop = setInterval(function(){
-                $('.one-banner').eq(currentItem).fadeOut(fadeTime);
+                $('.one-bannerP').eq(currentItem).fadeOut(fadeTime);
  
                 if(currentItem == numberOfItems -1){
                     currentItem = 0;
                 }else{
                     currentItem++;
                 }
-                $('.one-banner').eq(currentItem).fadeIn(fadeTime);
+                $('.one-bannerP').eq(currentItem).fadeIn(fadeTime);
  
             }, itemInterval);
         }
     };
  
-    InfiniteRotator.init();
+    InfiniteRotatorP.init();
  
 });

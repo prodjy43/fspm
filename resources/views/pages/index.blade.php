@@ -14,13 +14,19 @@
                 <a href="/login" class="btn btn-connexion">Accés membre</a>
             </div>
             <div class="banners">
-               
                @foreach ($files as $file)
-                   <span class="one-banner" style="background-image:url({{asset((string)$file)}});"></span>
+                    @if (($file->getFilename())[0] == 'g')
+                        <span class="one-banner one-bannerG" style="background-image:url({{asset((string)$file)}});"></span>
+                    @endif                   
                @endforeach
-               
-                
             </div>
+            <div class="banners">
+                @foreach ($files as $file)
+                    @if (($file->getFilename())[0] == 'p')
+                        <span class="one-banner one-bannerP" style="background-image:url({{asset((string)$file)}});"></span>
+                    @endif 
+                @endforeach
+             </div>
         </div>
     </div>
     <div class="allnews">

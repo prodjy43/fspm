@@ -23,7 +23,7 @@
             <li><a href="#!" onclick="slideMenu('#medias')">Médias</a></li>
             <li><a href="#!" onclick="slideMenu('#fspm')">FSPM</a></li>
             <li><a href="#!" onclick="slideMenu('#metiers')">Les métiers</a></li>
-            <li><a href="#!" onclick="slideMenu('#agenda')">Agenda</a></li>
+            <li><a href="/agenda" >Agenda</a></li> <!--onclick="slideMenu('#agenda')"-->
             <li><a href="/shop">Shop</a></li>
             <li><a href="http://qcm.fspm.ch/" target="_blank">QCM</a></li>
             <li><a href="#!" onclick="slideMenu('#emploi')">Emploi</a></li>
@@ -71,8 +71,8 @@
     </div>
     <div class="menu-slide" id="contact">
         <a href="/publicite" class="slide-lien">Publicité</a>
-        <a href="#!" class="slide-lien">Nous contacter</a>
-        <a href="#!" class="slide-lien">Réseaux sociaux</a>
+        <a href="/contact" class="slide-lien">Nous contacter</a>
+        <a href="/social" class="slide-lien">Réseaux sociaux</a>
     </div>
     @yield('content')
     <!-- Scripts -->

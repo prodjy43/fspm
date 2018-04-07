@@ -17,7 +17,7 @@
                 <h2>Accés membre</h2>
                 <form action="/login" method="POST">
                     @csrf
-                    <label for="email">{{ __('E-Mail Address') }}</label>
+                    <label for="email">{{ __('Adresse E-mail') }}</label>
 
                     <div class="form-raw">
                         <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus>
@@ -29,7 +29,7 @@
                         @endif
                     </div>
 
-                    <label for="password">{{ __('Password') }}</label>
+                    <label for="password">{{ __('Mot de passe') }}</label>
 
                     <div class="form-raw">
                         <input id="password" type="password" name="password" required>
